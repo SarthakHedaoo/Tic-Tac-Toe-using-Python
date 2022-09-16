@@ -1,5 +1,8 @@
+#TIC-TAC-TOE game using Python programming
+
 def sum(a, b, c ):
     return a + b + c
+
 
 def printBoard(xState, zState):
     zero = 'X' if xState[0] else ('O' if zState[0] else 0)
@@ -29,6 +32,7 @@ def checkWin(xState, zState):
     return -1
     
 if __name__ == "__main__":
+    count = 0
     xState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     zState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     turn = 1 # 1 for X and 0 for O
@@ -39,13 +43,17 @@ if __name__ == "__main__":
             print("X's Chance")
             value = int(input("Please enter a value: "))
             xState[value] = 1
+            count = count + 1
         else:
             print("O's Chance")
             value = int(input("Please enter a value: "))
             zState[value] = 1
+            count = count + 1
         cwin = checkWin(xState, zState)
         if(cwin != -1):
             print("Match over")
             break
-        
+        if(count>=9):
+            print("Match is draw")
+            break
         turn = 1 - turn
