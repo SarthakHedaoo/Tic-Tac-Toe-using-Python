@@ -1,2 +1,2 @@
 # Tic-Tac-Toe-using-Python
-Basic TIC-TAC-TOE game using python language.
+We all had played TIC-TAC-TOE game on paper during off-lectures. Me and my friend we decided to create the same TIC-TAC-TOE game using Python language. This was also our mini-project in college elective subject "Fundamentals of Computing". This is a simple game made using basic programming knowledge. In this game we took input from the players into Python lists. We wrote different functions for different purposes. Two important challenges while making this game were printing of the TIC-TAC-TOE board and checking for the end result of the game. We had a lot of fun while making this project.
